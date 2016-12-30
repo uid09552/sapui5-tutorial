@@ -1,0 +1,21 @@
+<mvc:View
+        controllerName="max.ui.test.controller.MyApp"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true">
+    <App class="myAppDemoWT">
+        <pages>
+            <Page title="{i18n>homePageTitle}">
+                <headerContent>
+                    <Button
+                            icon="sap-icon://hello-world"
+                            press="onOpenDialog"/>
+                </headerContent>
+                <content>
+                    <mvc:XMLView viewName="max.ui.test.view.HelloPanel"/>
+                    <mvc:XMLView viewName="max.ui.test.view.InvoiceList"></mvc:XMLView>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

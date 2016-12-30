@@ -1,0 +1,13 @@
+<mvc:View
+        controllerName="max.ui.test.controller.MyApp"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <Text text="Hello World"/>
+    <Button
+            text="{i18n>showHelloButtonText}"
+            press="onShowHello"/>
+    <Input
+        value ="{/recipient/name}"
+        description = "Hello {/recipient/name}"
+        ></Input>
+</mvc:View>
